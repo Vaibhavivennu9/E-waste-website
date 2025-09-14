@@ -1,17 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
-import { 
-  Home, 
-  User, 
-  LogOut, 
-  Plus, 
-  List, 
-  Heart,
-  Menu,
-  X
-} from 'lucide-react';
-import { useState } from 'react';
+import { Home, User, LogOut, Plus, List, Heart, Menu, X } from 'lucide-react';
+import logo from '../assets/ReCycleNet.png'; // <-- add this
+
 
 const Navbar = () => {
   const { user, logout, isAuthenticated } = useAuth();
@@ -33,7 +25,8 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
-              <img src="/logo.svg" alt="ReCycleNet Logo" className="w-8 h-8" />
+            <img src={logo} alt="ReCycleNet Logo" className="w-8 h-8" />
+
               <div className="flex flex-col">
                 <span className="text-xl font-bold text-gray-900">ReCycleNet</span>
                 <span className="text-xs text-green-600 font-medium">E-WASTE COLLECTION</span>
