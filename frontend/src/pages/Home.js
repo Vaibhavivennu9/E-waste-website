@@ -174,10 +174,8 @@ const Home = () => {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">E</span>
-                </div>
-                <span className="text-xl font-bold">E-Waste Hub</span>
+                <img src="/logo-large.svg" alt="ReCycleNet Logo" className="w-12 h-12" />
+                <span className="text-xl font-bold">ReCycleNet</span>
               </div>
               <p className="text-gray-400">
                 Making e-waste management simple and impactful for everyone.
