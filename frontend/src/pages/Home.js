@@ -173,9 +173,12 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <div className="flex items-center space-x-2 mb-4">
-                <img src="/logo-large.svg" alt="ReCycleNet Logo" className="w-12 h-12" />
-                <span className="text-xl font-bold">ReCycleNet</span>
+              <div className="flex flex-col items-center space-y-2 mb-4">
+                <img src="/logo-large.svg" alt="ReCycleNet Logo" className="w-16 h-16" />
+                <div className="text-center">
+                  <span className="text-2xl font-bold text-white">ReCycleNet</span>
+                  <div className="text-sm text-green-200 font-medium">E-WASTE COLLECTION</div>
+                </div>
               </div>
               <p className="text-gray-400">
                 Making e-waste management simple and impactful for everyone.

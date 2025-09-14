@@ -34,7 +34,10 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
               <img src="/logo.svg" alt="ReCycleNet Logo" className="w-8 h-8" />
-              <span className="text-xl font-bold text-gray-900">ReCycleNet</span>
+              <div className="flex flex-col">
+                <span className="text-xl font-bold text-gray-900">ReCycleNet</span>
+                <span className="text-xs text-green-600 font-medium">E-WASTE COLLECTION</span>
+              </div>
             </Link>
           </div>
 
